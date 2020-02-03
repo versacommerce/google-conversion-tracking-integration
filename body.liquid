@@ -1,0 +1,21 @@
+{% if template contains 'thankyou' %}
+	<script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = {{ integration['google_conversion_id'] }};
+      var google_conversion_language = "en";
+      var google_conversion_format = "3";
+      var google_conversion_color = "ffffff";
+      var google_conversion_label = "{{ integration['google_conversion_label'] }}";
+      var google_remarketing_only = false;
+    	var google_conversion_value = "{{ cart.subtotal_price }}";
+			var google_conversion_currency = "{{ shop.currency_code }}";
+      /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+    <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/{{ integration['google_conversion_id'] }}/?label={{ integration['google_conversion_label'] }}&currency_code={{ shop.currency_code }}&value={{ cart.subtotal_price }}&guid=ON&script=0"/>
+    </div>
+  </noscript>
+{% endif %}
