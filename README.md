@@ -1,8 +1,6 @@
 [<img src="versacommerce.png" width="250px" align="right" alt="VersaCommerce.de">](https://www.versacommerce.de/?utm_source=github)
 [<img src="google.png" width="100px" align="right" alt="support.google.com/google-ads">](https://support.google.com/google-ads/answer/1722054?hl=en/?utm_source=www.versacommerce.de)
 
-[VersaCommerce] [integration] [javascript] [GoogleConversionTracking]
-
 # Google Conversion Tracking Integration for VersaCommerce
 
 ## Google Conversation Tracking
